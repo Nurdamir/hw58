@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-     <h2>Modal</h2>
+      <h2>Modal</h2>
       <Button onClick={clickShowModal}>buttonModal</Button>
 
       <Modal
@@ -26,6 +26,8 @@ function App() {
       >
         <p>This is modal content</p>
       </Modal>
+
+      <h3>Alert</h3>
     </div>
   );
 }

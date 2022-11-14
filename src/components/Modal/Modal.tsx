@@ -1,8 +1,5 @@
 import React from 'react';
 import Backdrop from "../Backdrop/Backdrop";
-import Button from "../Button/Button";
-
-
 
 interface Props extends React.PropsWithChildren{
   show: boolean;
@@ -15,7 +12,6 @@ const Modal: React.FC<Props> = ({show, title, onClose, children}) => {
   return (
     <>
       <Backdrop show={show}/>
-
 
       <div
         className="modal show"
@@ -32,7 +28,6 @@ const Modal: React.FC<Props> = ({show, title, onClose, children}) => {
           </div>
           <div>
             <button onClick={onClose}>X</button>
-
           </div>
         </div>
       </div>
