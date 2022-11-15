@@ -3,9 +3,8 @@ import {Buttons} from "../../types";
 
 
 interface ButtonProps extends React.PropsWithChildren {
-  onClick: React.MouseEventHandler;
+  onClick?: React.MouseEventHandler;
   type: string;
-  // buttons: Buttons[];
 }
 
 

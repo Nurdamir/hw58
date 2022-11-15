@@ -26,7 +26,6 @@ const Modal: React.FC<Props> = ({show, buttons, title, onClose, children}) => {
 
         <div className="modal-dialog" onClick={e => e.stopPropagation()}>
           <div className="modal-content">
-
             <div className="modal-header">
               <h1 className="modal-title fs-5">{title}</h1>
               <Button onClick={onClose} type={"btn"}>X</Button>
@@ -35,10 +34,12 @@ const Modal: React.FC<Props> = ({show, buttons, title, onClose, children}) => {
 
             <div className="modal-footer">
               {buttons.map(button => (
-
-                <Button  onClick={button.onClick} type={button.type} key={button.type} >{button.label}</Button>
+                <Button
+                  onClick={button.onClick}
+                  type={button.type}
+                  key={button.type}
+                >{button.label}</Button>
               ))}
-              {/*<button onClick={onClose}>X</button>*/}
             </div>
           </div>
 
